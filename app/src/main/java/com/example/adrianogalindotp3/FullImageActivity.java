@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
+import com.github.chrisbanes.photoview.PhotoView;
+
 public class FullImageActivity extends AppCompatActivity {
 
     @Override
@@ -17,7 +19,7 @@ public class FullImageActivity extends AppCompatActivity {
         int position = i.getExtras().getInt("id");
         ImageAdapter adapter = new ImageAdapter(this);
 
-        ImageView imageView = findViewById(R.id.fullImageView);
+        PhotoView imageView = findViewById(R.id.fullImageView);
         imageView.setImageResource(adapter.images[position]);
     }
 }
