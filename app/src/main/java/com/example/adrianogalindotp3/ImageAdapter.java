@@ -52,7 +52,7 @@ public class ImageAdapter extends BaseAdapter {
 
         ImageView imageView = new ImageView(context);
         imageView.setImageResource(images[i]);
-        imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         imageView.setLayoutParams(new ViewGroup.LayoutParams(240,240));
         return imageView;
     }
